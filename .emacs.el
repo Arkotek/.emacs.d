@@ -231,6 +231,8 @@ line instead."
 (add-to-list 'auto-mode-alist '("\\.json$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.json5$" . js2-mode))
 
+(setq js2-strict-missing-semi-warning nil)
+
 (add-hook 'js2-mode-hook '(lambda ()
                             (local-set-key (kbd "RET") 'newline-and-indent)
                             ))
